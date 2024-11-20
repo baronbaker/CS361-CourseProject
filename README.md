@@ -14,9 +14,9 @@ To request data from the microservice, make a `GET` request to the `/avg-volume`
 `end_date` -- String -- End date in the format `YYYY-MM-DD`
 
 #### Example Request
-```bash
+
 curl -X GET "http://localhost:1234/avg-volume?ticker=PEP&start_date=2024-01-01&end_date=2024-01-31"
-```
+
 
 ### How to Programmatically Receive Data
 The microservice responds with a JSON object containing the following:
@@ -26,13 +26,13 @@ The microservice responds with a JSON object containing the following:
 `message` -- String -- Success message or error message  
 
 #### Example Response (Success)
-```json
+
 {
   "ticker": "PEP",
   "average_volume": 73431340.2,
   "message": "Success"
 }
-```
+
 ## UML Sequence Diagram
 Below is a UML sequence diagram that describes the interaction between the client and the microservice:
 ```mermaid
